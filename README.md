@@ -1,2 +1,2 @@
 # generic-microservices
-This repo contains general פurpose microservices
+This repo contains general purpose microservices

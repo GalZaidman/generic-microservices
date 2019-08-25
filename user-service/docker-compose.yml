@@ -1,0 +1,15 @@
+version: "3"
+services:
+  db:
+    image: "postgres:11"
+    container_name: "pg_user_service"
+    environment: 
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_USER: gzaidman
+      POSTGRES_DB: user_service
+    ports:
+      - "5432:5432"
+    volumes:
+      - user_service_data:/home/gzaidman/docker/volumes/postgres/
+volumes: 
+  user_service_data:
